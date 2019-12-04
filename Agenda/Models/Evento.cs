@@ -14,6 +14,11 @@ namespace Agenda.Models
         public DateTime NextExec{ get; set; }
         public DateTime LastExec { get; set; }
 
-        public ICollection<Enrollment> Enrollments { get; set; }
+        public Grupo grupo { get; set; }
+
+        public void SendEmail(string corpo)
+        {
+
+        }
     }
 }
